@@ -1,28 +1,34 @@
 #include"main.h"
 
 /**
- * more_numbers - print 0 - 14 ten times and you
- *       can only use _putchar three times
+ * print_diagonal - Print a diagonal if the number is positive.
+ * @n: The character to be count.
  *
- * Return: Always 0 (Success)
+ * Return: To the value of c.
  */
-
-void more_numbers(void)
+void print_diagonal(int n)
 {
-	int num, row, count;
+int i;
+int j;
 
-	for (row = 1; row <= 10; ++row)
-	{
-		for (count = 0; count <= 14; ++count)
-		{
-			num = count;
-			if (count > 9)
-			{
-				_putchar(1 + 48);
-				num = count % 10;
-			}
-			_putchar(num + 48);
-		}
-		_putchar('\n');
-	}
+if (n <= 0)
+{
+_putchar('\n');
+}
+
+else
+{
+_putchar('\\');
+_putchar('\n');
+
+for (i = 0; i < (n - 1); i++)
+{
+for (j = i; j >= 0; j--)
+{
+_putchar(' ');
+}
+_putchar('\\');
+_putchar('\n');
+}
+}
 }
