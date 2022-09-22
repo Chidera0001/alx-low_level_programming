@@ -5,7 +5,7 @@
  * File: main.h
  * Auth: Chidera Anele
  * Desc: Header file containing prototypes for all functions
- *    used in the 0x06. C - More pointers, arrays and strings directory
+ *    used in the 0x06. C - More pointers, arrays and strings directory.
  */
 
 int _putchar(char c);
