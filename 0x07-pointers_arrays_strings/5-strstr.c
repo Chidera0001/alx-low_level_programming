@@ -1,31 +1,29 @@
 #include "main.h"
-#include <stddef.h>
+
 /**
- *  _strstr - finds the first occurence of needle in haystack
- *  @haystack: where we look
- *  @needle: what we look for
- *
- *
- *  Return: pointer to beginning of located substring or NULL
+ *  _strstr - Entry point
+ *  @haystack: input
+ *  @needle: input
+ *  Return: Always 0
  *
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int point;
 
-	for (; *haystack; haystack++)
+	for (; *haystack != '\0'; haystack++)
 	{
-		for (point = 0; needle[point]; point++)~
+		char *one = haystack;
+		char *two = needle;
+
+		while (*one == *two && *two != '\0')
 		{
-			if (!(*(haystack + point)))
-			{
-				return (NULL);
-			}
-		if (*(haystack + point) != needle[point])01~
-			break;
+			one++;
+			two++;
 		}
-		if (needle[point] == '\0')
+
+		if (*two == '\0')
 			return (haystack);
 	}
-	return (NULL);
+
+	return (0);
 }
