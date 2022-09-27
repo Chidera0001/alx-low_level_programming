@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stddef.h>
 /**
- * _strstr - finds the first occurence of needle in haystack
+ * _str - finds the first occurence of needle in haystack
  * @haystack: where we look
  * @needle: what we look for
  *
@@ -15,13 +15,13 @@ char *_strstr(char *haystack, char *needle)
 
 	for (; *haystack; haystack++)
 	{
-		for (point = 0; needle[point]; point++)~
+		for (point = 0; needle[point]; point++)
 		{
 			if (!(*(haystack + point)))
 			{
 				return (NULL);
 			}
-		if (*(haystack + point) != needle[point])01~
+		if (*(haystack + point) != needle[point])
 			break;
 		}
 		if (needle[point] == '\0')

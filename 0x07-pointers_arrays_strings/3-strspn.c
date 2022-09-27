@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _strspn - gets the length of a prefix substring
+ * _memset - strspn - gets the length of a prefix substring
  * @s: the string we look at
  * @accept: the string we compare to
  *
  * Return: unsigned int
  *
  */
-unsigned int _strspn(char *s, char *accept)
+unsigned int_strspn(char *s, char *accept)
 {
 	int i = 0;
 	int j = 0;
@@ -27,3 +27,4 @@ unsigned int _strspn(char *s, char *accept)
 	}
 	return (i);
 }
+
