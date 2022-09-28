@@ -1,13 +1,8 @@
-/**
- * File: 0-puts_recursion.c
- * Auth: Dera
- */
-
 #include "main.h"
-
 /**
- * _puts_recursion - Prints a string, followed by a new line.
- * @s: The string to be printed.
+ * _puts_recursion - Prints a string, followed by a newline.
+ * @s: The string we print.
+ * Return: void
  */
 void _puts_recursion(char *s)
 {
@@ -16,7 +11,6 @@ void _puts_recursion(char *s)
 		 _putchar(*s);
 		 _puts_recursion(s + 1);
 	 }
-
-	 else
-		 _putchar('\n');
+	 if (!*s)
+	 _putchar('\n');
 }
