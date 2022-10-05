@@ -1,7 +1,11 @@
 #include "main.h"
 #include <stddef.h>
 /**
+<<<<<<< HEAD
  * _strstr - finds the first occurence of needle in haystack
+=======
+ * _str - finds the first occurence of needle in haystack
+>>>>>>> 4028a80d5a936ffc411d72b965e836836ea5e960
  * @haystack: where we look
  * @needle: what we look for
  *

@@ -12,6 +12,10 @@ char *_memset(char *s, char b, unsigned int n)
 	char *ptr = s;
 
 	while (n-- > 0)
+<<<<<<< HEAD
 	*ptr++ = b;
+=======
+	*ptr++ + b;
+>>>>>>> 4028a80d5a936ffc411d72b965e836836ea5e960
 	return (s);
 }

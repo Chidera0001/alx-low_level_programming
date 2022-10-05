@@ -1,6 +1,10 @@
 #include "main.h"
 /**
+<<<<<<< HEAD
  * print_chessboard - prints the chessboard
+=======
+ * print_chessboard - prints the chessboard1~
+>>>>>>> 4028a80d5a936ffc411d72b965e836836ea5e960
  * @a: the chessboard
  *
  *
